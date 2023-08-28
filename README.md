@@ -23,7 +23,7 @@ ssh -A -J root@10.1.110.200 admin@10.1.110.99: This is an SSH command with two f
   
 bash sudo tcpdump -s 0 -Un -w - -i mirror0: Once connected to the final destination (`admin@10.1.110.99`), this command is executed. 
 
-tcpdump -s 0 -Un -w - -i mirror0**: This is a command to capture packets.  
+tcpdump -s 0 -Un -w - -i mirror0: This is a command to capture packets.  
  -s 0: Capture the whole packet. 
 
  -U: Packet output is flushed immediately. 
@@ -32,7 +32,7 @@ tcpdump -s 0 -Un -w - -i mirror0**: This is a command to capture packets.
  
  -w -: Write the output (packets) to standard output (`stdout`). 
  
- -i mirror0`: Capture packets on the `mirror0` interface. 
+ -i mirror0: Capture packets on the `mirror0` interface. 
  
  -s 0: Capture the whole packet. 
   
