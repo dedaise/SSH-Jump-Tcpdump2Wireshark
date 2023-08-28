@@ -9,7 +9,9 @@ Understanding the SSH Command with -A, -J flags and Wireshark Integration
 # Objective: 
  To explain the functionality and use-case of the command with Arista Switch: 
  
-# Command Example: ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
+# Command Example: 
+
+ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
  
 # Breakdown of the Command: 
   
