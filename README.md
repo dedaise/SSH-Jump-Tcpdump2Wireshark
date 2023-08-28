@@ -20,7 +20,12 @@ ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -
 ![Example Image](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.54%20AM.png)
 
  
-# Breakdown of the Command: 
+# SSH Command Breakdown: 
+
+* Item 1
+* Item 2
+* Item 3
+
   
 ssh -A -J root@10.1.110.200 admin@10.1.110.99: This is an SSH command with two flags and two targeted addresses. 
 
