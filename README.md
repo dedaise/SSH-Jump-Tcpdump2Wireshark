@@ -11,7 +11,7 @@ Verify 'Mirror to EOS feature' supported on your Arista Platform:
 
  ![Example](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%2010.34.46%20AM.png)
 
-# Example: 
+# SSH Forwarding Command Example: 
 
 ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
 
