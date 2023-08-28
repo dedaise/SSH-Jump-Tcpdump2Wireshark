@@ -22,6 +22,8 @@ ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -
  
 # SSH Command Breakdown: 
 
+* Command: ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
+
 * Item 1
 * Item 2
 * Item 3
