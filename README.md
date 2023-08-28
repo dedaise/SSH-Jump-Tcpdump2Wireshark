@@ -2,7 +2,7 @@
 Understanding the SSH Command with -A, -J flags and Wireshark Integration 
  
    
-Use-Case: 
+#Use-Case: 
 
 This command is particularly useful for network diagnostics in environments where direct access to a device is restricted, but you can access it via an intermediate or "jump" host. By forwarding the SSH agent, you leverage your local machine's credentials to authenticate to the target device. The immediate analysis in Wireshark allows you to visually inspect and troubleshoot the network traffic without having to save, transfer, and then open a pcap file. 
  
