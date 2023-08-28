@@ -3,7 +3,7 @@
 This article provides an example useful for performing TCPDUMP for network diagnostics in environments where direct access to the Arista switch is restricted, however access via an intermediate or "jump" host is avaible.  By forwarding the SSH agent and using EOS's Mirror feature, you can have immediate analysis in Wireshark allowing you to visually inspect and troubleshoot the network traffic without having to save, transfer, and then open a pcap file. 
 
 # Platform compatibility
-Verify Mirror to EOS feature supported on your Arista Platform:
+Verify 'Mirror to EOS feature' supported on your Arista Platform:
 
 [Feature Verification](https://www.arista.com/en/support/product-documentation/supported-features)
 
