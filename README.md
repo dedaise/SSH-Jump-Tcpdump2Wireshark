@@ -1,6 +1,6 @@
 # Use-Case: 
 
-This command is particularly useful for network diagnostics in environments where direct access to the Arista switch is restricted, but you can however access it via an intermediate or "jump" host.  By forwarding the SSH agent, you leverage your local machine's credentials to authenticate to the target device. The immediate analysis in Wireshark allows you to visually inspect and troubleshoot the network traffic without having to save, transfer, and then open a pcap file. 
+This article example the use of a command particularly useful for network diagnostics in environments where direct access to the Arista switch is restricted, however access via an intermediate or "jump" host is avaible.  By forwarding the SSH agent and using EOS's Mirror feature, you can have immediate analysis in Wireshark allowing you to visually inspect and troubleshoot the network traffic without having to save, transfer, and then open a pcap file. 
 
 # Platform compatibility
 Verify Mirror to EOS feature supported on your Arista Platform:
