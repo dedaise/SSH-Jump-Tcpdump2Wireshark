@@ -9,7 +9,8 @@ This command is particularly useful for network diagnostics in environments wher
 Verify Mirror to EOS feature supported on your Arista Platform:
 
 [Feature Verification](https://www.arista.com/en/support/product-documentation/supported-features)
- 
+
+ ![Example](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%2010.34.06%20AM.png)
 
 # Example: 
 
