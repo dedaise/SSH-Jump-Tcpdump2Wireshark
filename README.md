@@ -7,13 +7,15 @@ Understanding the SSH Command with -A, -J flags and Wireshark Integration
  This command is particularly useful for network diagnostics in environments where direct access to a device is restricted, but you can access it via an intermediate or "jump" host.  By forwarding the SSH agent, you leverage your local machine's credentials to authenticate to the target device. The immediate analysis in Wireshark allows you to visually inspect and troubleshoot the network traffic without having to save, transfer, and then open a pcap file. 
  
 # Objective: 
- To explain the functionality and use-case of the command with Arista Switch: 
+ To explain the functionality and use-case of the command with Arista Switches: 
  
-# Command Example: 
+# Example: 
 
 ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
 
 ![Example Image](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.28%20AM.png)
+
+![Example Image]([https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.28%20AM.png](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.54%20AM.png))
 
  
 # Breakdown of the Command: 
