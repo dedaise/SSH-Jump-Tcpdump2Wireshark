@@ -24,32 +24,33 @@ ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -
 
 * Command: ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
 
-  * ssh -A -J root@10.1.110.200 admin@10.1.110.99: # This is an SSH command with two flags and two targeted addresses. 
+  * ssh -A -J root@10.1.110.200 admin@10.1.110.99:  **This is an SSH command with two flags and two targeted addresses.**
 
- -A: Enables forwarding of the authentication agent connection. This is useful when you want to use SSH keys from the originating machine on a remote machine without copying them. 
+   * -A: Enables forwarding of the authentication agent connection. **This is useful when you want to use SSH keys from the originating machine on a remote machine without copying them.** 
 
- -J root@10.1.110.200: Specifies a "jump host" or an intermediate machine. The SSH connection first goes to `root@10.1.110.200`, then from there, it connects to the final destination `admin@10.1.110.99`. 
+   * -J root@10.1.110.200: Specifies a "jump host" or an intermediate machine. **The SSH connection first goes to `root@10.1.110.200`, then from there, it connects to the final destination `admin@10.1.110.99`.** 
   
-bash sudo tcpdump -s 0 -Un -w - -i mirror0: Once connected to the final destination (`admin@10.1.110.99`), this command is executed. 
+  * bash sudo tcpdump -s 0 -Un -w - -i mirror0: **Once connected to the final destination (`admin@10.1.110.99`), this command is executed.**
 
-tcpdump -s 0 -Un -w - -i mirror0: This is a command to capture packets.  
- -s 0: Capture the whole packet. 
+   * tcpdump -s 0 -Un -w - -i mirror0: **This is a command to capture packets.**  
 
- -U: Packet output is flushed immediately. 
+   * -s 0: **Capture the whole packet.**
+
+   * -U: **Packet output is flushed immediately.** 
  
- -n: Don't resolve hostnames (faster capture). 
+   * -n: **Don't resolve hostnames (faster capture).** 
  
- -w -: Write the output (packets) to standard output (`stdout`). 
+   * -w -: **Write the output (packets) to standard output (`stdout`).** 
  
- -i mirror0: Capture packets on the `mirror0` interface. 
+   * -i mirror0: **Capture packets on the `mirror0` interface.** 
  
- -s 0: Capture the whole packet. 
+  * -s 0: **Capture the whole packet.** 
   
-| wireshark -k -i -: This takes the output of the previous command (packet data) and provides it as input to Wireshark. 
+  * | wireshark -k -i -: **This takes the output of the previous command (packet data) and provides it as input to Wireshark.**
 
- -k: Start capturing immediately 
+   * -k: **Start capturing immediately**
 
- -i -: Read from standard input (`stdin`), which means it'll read the packet data being piped from the previous command. 
+   * -i -: **Read from standard input (`stdin`), which means it'll read the packet data being piped from the previous command.** 
    
 # Summary: 
   
