@@ -42,6 +42,6 @@ tcpdump -s 0 -Un -w - -i mirror0**: This is a command to capture packets.
 
  -i -: Read from standard input (`stdin`), which means it'll read the packet data being piped from the previous command. 
    
-Summary: 
+# Summary: 
   
 This command captures network packets from a remote machine (`admin@10.1.110.99`) using `tcpdump`. However, to reach that machine, it first connects to another machine (`root@10.1.110.200`). The captured packets are then directly streamed to Wireshark on the local machine for real-time analysis. 
