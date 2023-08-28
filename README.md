@@ -1,6 +1,3 @@
-# SSH-Jump-Tcpdump2Wireshark
-Remote packet capture using a Jumpbox.
- 
 # Use-Case: 
 
 This command is particularly useful for network diagnostics in environments where direct access to the Arista switch is restricted, but you can however access it via an intermediate or "jump" host.  By forwarding the SSH agent, you leverage your local machine's credentials to authenticate to the target device. The immediate analysis in Wireshark allows you to visually inspect and troubleshoot the network traffic without having to save, transfer, and then open a pcap file. 
