@@ -24,12 +24,7 @@ ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -
 
 * Command: ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
 
-* Item 1
-* Item 2
-* Item 3
-
-  
-ssh -A -J root@10.1.110.200 admin@10.1.110.99: This is an SSH command with two flags and two targeted addresses. 
+** ssh -A -J root@10.1.110.200 admin@10.1.110.99: # This is an SSH command with two flags and two targeted addresses. 
 
  -A: Enables forwarding of the authentication agent connection. This is useful when you want to use SSH keys from the originating machine on a remote machine without copying them. 
 
