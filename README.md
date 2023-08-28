@@ -12,6 +12,9 @@ Understanding the SSH Command with -A, -J flags and Wireshark Integration
 # Command Example: 
 
 ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
+
+![Example Image](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.28%20AM.png)
+
  
 # Breakdown of the Command: 
   
