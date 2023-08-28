@@ -15,7 +15,7 @@ ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -
 
 ![Example Image](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.28%20AM.png)
 
-![Example Image]([https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.28%20AM.png](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.54%20AM.png)
+![Example Image](https://github.com/dedaise/SSH-Jump-Tcpdump2Wireshark/blob/main/Screen%20Shot%202023-08-28%20at%209.56.54%20AM.png)
 
  
 # Breakdown of the Command: 
