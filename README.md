@@ -1,14 +1,16 @@
 # SSH-Jump-Tcpdump2Wireshark
-Understanding the SSH Command with -A, -J flags and Wireshark Integration 
+Remote packet capture using a Jumpbox.
  
-   
 # Use-Case: 
 
 This command is particularly useful for network diagnostics in environments where direct access to the Arista switch is restricted, but you can however access it via an intermediate or "jump" host.  By forwarding the SSH agent, you leverage your local machine's credentials to authenticate to the target device. The immediate analysis in Wireshark allows you to visually inspect and troubleshoot the network traffic without having to save, transfer, and then open a pcap file. 
+
+# Platform compatibility
+Verify Mirror to EOS feature supported on your Arista Platform:
+
+
  
-# Objective: 
- To explain the functionality and use-case of the command with Arista Switches: 
- 
+
 # Example: 
 
 ssh -A -J root@10.1.110.200 admin@10.1.110.99 "bash sudo tcpdump -s 0 -Un -w - -i mirror0" | wireshark -k -i - 
